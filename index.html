@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">This is my form</h1>
+        <p id="description">This is the form description</p>
+    </header>
+    <section>
+        <form action="" id="survey-form">
+            <label id="name-label" for="name">Name</label>
+            <input type="text" id="name" name="email" placeholder="Complete Name">
+            <label id="email-label" for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Email Address">
+            <label id="number-label" for="number">Telephone Number</label>
+            <input type="number" id="number" name="number"
+            min="1111111111" max="9999999999" placeholder="Telephone Number">
+            <label for="dropdown">Desired car color</label>
+            <select name="dropdown" id="dropdown">
+                <option value="rosso-corsa">ROSSO CORSA</option>
+                <option value="blu-pozzi">BLU POZZI</option>
+                <option value="giallo-modena">GIALLO MODENA</option>
+                <option value="bianco-avus">BIANCO AVUS</option>
+                <option value="nero">NERO</option>
+                <option value="rosso-scuderia">ROSSO SCUDERIA</option>
+            </select>
+            <input type="submit">
+        </form>
+    </section>
+
+</body>
+</html>
