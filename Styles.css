@@ -6,7 +6,8 @@ body {
 }
 
 #survey-form {
-    background-color:  hsl(0, 17%, 14%);
+    background-color:  hsla(244, 56%, 35%, 0.561);
+    color: white;
     display: inline-block;
     max-width: 600px;
     padding: 10px;
