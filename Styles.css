@@ -1,0 +1,58 @@
+body {
+    background: linear-gradient(120deg, hsl(0, 76%, 69%), #382e2e);
+    margin: 0;
+    text-align: center;
+    font-family: "Racing Sans One", sans-serif ;
+}
+
+#survey-form {
+    background-color:  hsl(0, 17%, 14%);
+    display: inline-block;
+    max-width: 600px;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: left;
+    border-radius: 10px;
+}
+
+.text {
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 20px;
+    margin: 8px 0 ;
+    border-radius: 5px;
+}
+
+.dropdown {
+    text-align: left;
+    margin: 25px 0;
+}
+
+select {
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 20px;
+    margin: 8px 0 ;
+}
+
+fieldset {
+    margin: 25px 0;
+    border-radius: 5px;
+}
+
+fieldset input {
+    margin: 9px 0;
+}
+
+textarea {
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 20px;
+    margin: 8px 0 ;
+}
+
