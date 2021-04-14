@@ -16,12 +16,12 @@
     <section>
         <form action="" id="survey-form">
             <label id="name-label" for="name">Name</label>
-            <input class="text" type="text" id="name" name="email" placeholder="Complete Name">
+            <input class="text" type="text" id="name" name="email" placeholder="Complete Name" required>
             <label id="email-label" for="email">Email</label>
-            <input class="text" type="email" id="email" name="email" placeholder="Email Address">
+            <input class="text" type="email" id="email" name="email" placeholder="Email Address" required>
             <label id="number-label" for="number">Telephone Number</label>
             <input class="text" type="number" id="number" name="number"
-            min="1111111111" max="9999999999" placeholder="Telephone Number"><br>
+            min="1111111111" max="9999999999" placeholder="Telephone Number" required><br>
             <div class="dropdown">
                 <label for="dropdown">Desired Exterior Color</label>
                 <select class="options" name="dropdown" id="dropdown" >
@@ -59,7 +59,7 @@
             </fieldset>
             <p>Additional requirements:</p>
             <textarea id="requirements" cols="30" rows="5" type="textarea" placeholder="Enter your additional car requirements"></textarea> <br>
-            <input type="submit" value="Send">
+            <input id="submit" type="submit" value="Send">
         </form>
     </section>
 
