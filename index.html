@@ -67,9 +67,10 @@
             <textarea id="requirements" cols="30" rows="5" type="textarea" placeholder="Enter your additional car requirements"></textarea> <br>
             <input id="submit" type="submit" value="Send">
         </form>
-        <script>
+    </section>
+<script>
 document.getElementById('survey-form').addEventListener('submit', function(e) {
-  e.preventDefault();
+  e.preventDefault(); // Prevents the default form submission
 
   // Collect form data
   const name = document.getElementById('name').value;
@@ -80,7 +81,7 @@ document.getElementById('survey-form').addEventListener('submit', function(e) {
   const accessories = Array.from(document.querySelectorAll('.chckbx input[type="checkbox"]:checked')).map(cb => cb.nextElementSibling.textContent);
   const requirements = document.getElementById('requirements').value;
 
-  // Send to Segment
+  // Send to Segment as event properties
   analytics.track('Survey Submitted', {
     name,
     email,
@@ -96,7 +97,5 @@ document.getElementById('survey-form').addEventListener('submit', function(e) {
   e.target.reset();
 });
 </script>
-    </section>
-
 </body>
 </html>
