@@ -31,6 +31,12 @@ body {
     margin: 25px 0;
 }
 
+.iti {
+    position: relative;
+    /* display: inline-block; */
+    color: black;
+}
+
 select {
     border-radius: 5px;
     display: block;
@@ -69,8 +75,4 @@ input[type=submit] {
     cursor: pointer;
 }
 
-.iti {
-    position: relative;
-    /* display: inline-block; */
-    color: black;
-}
+
