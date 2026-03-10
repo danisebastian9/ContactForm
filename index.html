@@ -71,13 +71,21 @@
         </form>
     </section>
 <script>
+  const input = document.querySelector("#number");
+  const iti = window.intlTelInput(input, {
+        loadUtils: () => import("https://cdn.jsdelivr.net/npm/intl-tel-input@26.8.0/build/js/utils.js"),
+            countryOrder: ["co","us","ca"],
+            separateDialCode: true
+  });
+
+    
 document.getElementById('survey-form').addEventListener('submit', function(e) {
   e.preventDefault(); // Prevents the default form submission
 
   // Collect form data
   const name = document.getElementById('name').value;
   const email = document.getElementById('email').value;
-  const number = document.getElementById('number').value;
+  const number = iti.getNumber();
   const exterior = document.getElementById('dropdown').value;
   const interior = document.querySelector('input[name="interior"]:checked')?.value;
   const accessories = Array.from(document.querySelectorAll('.chckbx input[type="checkbox"]:checked')).map(cb => cb.nextElementSibling.textContent);
@@ -99,18 +107,6 @@ document.getElementById('survey-form').addEventListener('submit', function(e) {
   e.target.reset();
 });
 </script>
-<script>
-    var input = document.querySelector("#number");
-    window.intlTelInput(input, {
-        loadUtils: () => import("https://cdn.jsdelivr.net/npm/intl-tel-input@26.8.0/build/js/utils.js"),
-            countryOrder: ["co","us","ca"],
-            separateDialCode: true
-    });
-    //window.intlTelInput(input, {
-        // optional options here
-        //preferredCountries: ["co", "us", "ca"], // Example of preferred countries
-        //separateDialCode: true // Optional: displays the country code in a separate element
-    //});
-</script>
+
 </body>
 </html>
