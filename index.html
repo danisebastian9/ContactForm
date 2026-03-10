@@ -103,7 +103,8 @@ document.getElementById('survey-form').addEventListener('submit', function(e) {
     var input = document.querySelector("#number");
     window.intlTelInput(input, {
         loadUtils: () => import("https://cdn.jsdelivr.net/npm/intl-tel-input@26.8.0/build/js/utils.js"),
-            preferredCountries: ["co", "us", "ca"], // Example of preferred countries
+            countryOrder: ["co","us","ca"],
+            separateDialCode: true
     });
     //window.intlTelInput(input, {
         // optional options here
